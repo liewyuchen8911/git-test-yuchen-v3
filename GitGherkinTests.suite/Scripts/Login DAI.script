@@ -1,0 +1,70 @@
+﻿
+to handle the_user_is_on_the_login_page
+	assert ImageFound(text:"Sign in to your account", waitFor:6)
+end the_user_is_on_the_login_page
+
+to handle the_user_enters_valid_credentials
+	
+	Click text:"Username", waitFor:6
+	TypeText "admin@eggplant.io"
+	
+	TypeText tabKey	
+	TypeText "wibblewobble"
+	
+	Click text:"Sign In", waitFor:6, caseSensitive:on
+	
+end the_user_enters_valid_credentials
+
+to handle the_user_is_redirected_to_the_dashboard
+	
+	assert ImageFound(text:"Test case dashboard", caseSensitive:on, waitFor:6)
+	
+end the_user_is_redirected_to_the_dashboard
+
+to handle the_user_enters_invalid_credentials
+	
+	Click text:"Username", waitFor:6
+	TypeText "user@eggplant.io"
+	
+	TypeText tabKey	
+	TypeText "wibblewobble"
+	
+	Click text:"Sign In", waitFor:6, caseSensitive:on
+	
+end the_user_enters_invalid_credentials
+
+to handle the_user_is_not_redirected_to_the_dashboard
+	
+	assert not ImageFound(text:"Test case dashboard", caseSensitive:on, waitFor:6)
+	
+end the_user_is_not_redirected_to_the_dashboard
+
+to handle the_user_enters_username_STR_and_password_STR
+	params str1, str2
+	
+	Click text:"Username", waitFor:6
+	TypeText str1
+	
+	TypeText tabKey	
+	TypeText str2
+	
+	Click text:"Sign In", waitFor:6, caseSensitive:on
+	
+end the_user_enters_username_STR_and_password_STR
+
+to handle the_user_clicks_on_logout_from_side_navigation_bar
+	Click text:"LogOut", waitFor:6, caseSensitive:on, enhanceLocalContrast:on
+end the_user_clicks_on_logout_from_side_navigation_bar
+
+
+to handle the_user_is_on_the_dashboard_page
+	assert ImageFound(text:"Test case dashboard", caseSensitive:on, waitFor:6)
+end the_user_is_on_the_dashboard_page
+
+
+to handle the_user_is_on_the_dashboard_page_VAR
+	params bool
+	
+	assert ImageFound(text:"Test case dashboard", caseSensitive:on, waitFor:6) is bool
+	
+end the_user_is_on_the_dashboard_page_VAR

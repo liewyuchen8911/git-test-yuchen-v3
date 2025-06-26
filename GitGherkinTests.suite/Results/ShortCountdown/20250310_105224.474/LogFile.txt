@@ -1,0 +1,8 @@
+﻿2025-03-10 10:52:24.479 +0800	START		Running ShortCountdown.script
+2025-03-10 10:52:24.501 +0800	Log		1	6	on_shortcountdown	ShortCountdown.script
+2025-03-10 10:52:34.515 +0800	Log		2	6	on_shortcountdown	ShortCountdown.script
+2025-03-10 10:52:44.534 +0800	Log		3	6	on_shortcountdown	ShortCountdown.script
+2025-03-10 10:52:54.548 +0800	Log		4	6	on_shortcountdown	ShortCountdown.script
+2025-03-10 10:53:04.565 +0800	Log		5	6	on_shortcountdown	ShortCountdown.script
+2025-03-10 10:53:14.625 +0800	EndTestCase		(Duration:"50.142", Errors:"0", Exceptions:"0", StartTime:"2025-03-10 10:52:24 +0800", Successes:"1", TestCase:"ShortCountdown.script", Warnings:"0")
+2025-03-10 10:53:14.704 +0800	SUCCESS		Execution Time 0:00:50 ShortCountdown.script

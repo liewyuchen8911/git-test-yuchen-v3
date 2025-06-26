@@ -1,0 +1,11 @@
+﻿params n
+
+log "start countdown"
+log n
+
+repeat with n down to 1
+	log repeatIndex()
+	wait ten second
+end repeat
+
+log "BOOM!"

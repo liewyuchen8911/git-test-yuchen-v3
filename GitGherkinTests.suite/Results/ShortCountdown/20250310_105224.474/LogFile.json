@@ -1,0 +1,60 @@
+{
+	"entries": [
+		{
+				"message": "Running ShortCountdown.script",
+				"identifier": "START",
+				"timestamp": "2025-03-10 10:52:24.479 +0800"
+			},
+		{
+				"handlerName": "on_shortcountdown",
+				"timestamp": "2025-03-10 10:52:24.501 +0800",
+				"message": "1",
+				"scriptName": "ShortCountdown.script",
+				"handlerLine": 6,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_shortcountdown",
+				"timestamp": "2025-03-10 10:52:34.515 +0800",
+				"message": "2",
+				"scriptName": "ShortCountdown.script",
+				"handlerLine": 6,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_shortcountdown",
+				"timestamp": "2025-03-10 10:52:44.534 +0800",
+				"message": "3",
+				"scriptName": "ShortCountdown.script",
+				"handlerLine": 6,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_shortcountdown",
+				"timestamp": "2025-03-10 10:52:54.548 +0800",
+				"message": "4",
+				"scriptName": "ShortCountdown.script",
+				"handlerLine": 6,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_shortcountdown",
+				"timestamp": "2025-03-10 10:53:04.565 +0800",
+				"message": "5",
+				"scriptName": "ShortCountdown.script",
+				"handlerLine": 6,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"50.142\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-03-10 10:52:24 +0800\", Successes:\"1\", TestCase:\"ShortCountdown.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-03-10 10:53:14.625 +0800"
+			},
+		{
+				"message": "Execution Time 0:00:50 ShortCountdown.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-03-10 10:53:14.704 +0800"
+			}
+	],
+	"createdTimestamp": "2025-03-10 10:52:24.481 +0800"
+}

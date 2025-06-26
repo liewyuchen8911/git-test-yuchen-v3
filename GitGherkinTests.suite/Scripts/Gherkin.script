@@ -1,0 +1,76 @@
+﻿-- scenario outline START
+to handle that_the_Calculator_app_is_running
+	log "the_Calculator_app_is_running"
+end that_the_Calculator_app_is_running
+
+to handle there_is_no_current_value_in_the_calculator
+	log "no_current_value_in_the_calculator"
+end there_is_no_current_value_in_the_calculator
+
+to handle multiply_VAR_by_VAR_in_the_calculator_app
+	params NumberA, NumberB
+	log "num1"&&NumberA
+	log "num2"&&NumberB	
+end multiply_VAR_by_VAR_in_the_calculator_app
+
+to handle displays_correct_VAR_after_multiplying_VAR_by_VAR
+	params Answer, NumberA, NumberB
+	assert NumberA * NumberB is Answer
+end displays_correct_VAR_after_multiplying_VAR_by_VAR
+
+to handle add_VAR_and_VAR_in_the_calculator_app
+	params NumberA, NumberB
+	log "num1"&&NumberA
+	log "num2"&&NumberB	
+end add_VAR_and_VAR_in_the_calculator_app
+
+to handle displays_correct_VAR_after_adding_VAR_and_VAR
+	params Answer, NumberA, NumberB
+	assert NumberA + NumberB is Answer
+end displays_correct_VAR_after_adding_VAR_and_VAR
+-- scenario outline END
+
+
+-- scenario START
+to handle the_user_is_on_Contacts_tab
+	Click text:"Contacts", waitFor:6
+	assert ImageFound(text:"Not a real phone", waitFor:6)
+end the_user_is_on_Contacts_tab
+
+to handle the_user_clicks_on_Downloads_tab
+	Click text:"Downloads", waitFor:6	
+end the_user_clicks_on_Downloads_tab
+
+to handle the_user_is_on_Downloads_tab
+	assert ImageFound(text:"The phone is a lie", waitFor:6)
+	Log "Downloads tab"
+end the_user_is_on_Downloads_tab
+
+to handle the_user_clicks_on_History_tab
+	Click text:"History", waitFor:6
+end the_user_clicks_on_History_tab
+
+to handle the_user_is_on_History_tab
+	assert ImageFound(text:"Totally fake", waitFor:6)
+	Log "History tab"
+end the_user_is_on_History_tab
+-- scenario END
+
+
+-- background START
+to handle background_for_given
+	log "background for given"
+end background_for_given
+
+to handle background_for_when
+	log "background for when"
+end background_for_when
+
+to handle background_for_then
+	log "background for then"
+end background_for_then
+
+to handle background_for_but
+	log "background for but"
+end background_for_but
+-- background END

@@ -1,0 +1,5 @@
+﻿TypeText AltKey, F2
+TypeText "google-chrome"
+TypeText returnKey
+wait 3
+

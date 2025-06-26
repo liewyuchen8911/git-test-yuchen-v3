@@ -1,0 +1,7 @@
+﻿params shouldPass
+
+if shouldPass
+	LogSuccess "This action is passing"
+else 
+	LogError "This action is failing"
+end if

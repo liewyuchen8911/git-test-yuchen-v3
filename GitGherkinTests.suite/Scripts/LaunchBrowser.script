@@ -1,0 +1,22 @@
+﻿
+to handle the_user_connects_to_the_sut
+	
+	assert the status of ConnectionInfo("Single System") is "Connected"
+	
+end the_user_connects_to_the_sut
+
+to handle the_user_launch_firefox_browser
+	
+	TypeText windowsKey, "r"
+	TypeText "firefox", returnKey
+	wait 3
+	TypeText windowsKey, upArrow	
+	
+end the_user_launch_firefox_browser
+
+to handle the_user_redirects_to_DAI
+	
+	TypeText controlKey, "l"
+	TypeText "http://localhost:8000", returnKey
+	
+end the_user_redirects_to_DAI

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="ShortCountdown_script" package="NewGherkinTests.suite" timestamp="2025-03-10 10:52:24.474 +0800"
+ tests="1"  failures="0" errors="0" time="50.148000">
+  <properties>
+   <property name="RunDate" value="2025-03-10 10:52:24.474 +0800"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="ShortCountdown.script" assertions="1" status="success"  time="50.142">
+  </testcase>
+ </testsuite>
+</testsuites>
